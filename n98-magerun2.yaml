@@ -1,0 +1,6 @@
+autoloaders:
+  AquiveMedia: %module%/src
+
+commands:
+  customCommands:    
+    - AquiveMedia\ProductsDeleteCommand
