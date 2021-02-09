@@ -16,7 +16,7 @@ $ magerun2 products:delete
 ```
 Warning
 --------
-With great power comes great responsibility. This is my first (experimental) magerun module. It is untested. Try to use it on a development(!) environment only.
+With great power comes great responsibility. This is my first (experimental) magerun module. It is realy basic amd it is untested (ok, I ran it twice). Try to use it on a development(!) environment only.
 
 Todo
 --------
