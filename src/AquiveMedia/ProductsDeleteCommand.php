@@ -28,10 +28,13 @@ class ProductsDeleteCommand extends AbstractMagentoCommand
             
             $objectManager = \Magento\Framework\App\ObjectManager::getInstance();
             $objectManager->get('Magento\Framework\Registry')->register('isSecureArea', true);
+            
+            $appState = $objectManager->get('\Magento\Framework\App\State');
+            $appState->setAreaCode('adminhtml');
+            
             $productCollection = $objectManager->create('Magento\Catalog\Model\ResourceModel\Product\CollectionFactory');
             $collection = $productCollection->create()->load();
-            $appState = $objectManager->get('\Magento\Framework\App\State');
-            $appState->setAreaCode('frontend');
+            
                         
             foreach ($collection as $product){
                 try {
